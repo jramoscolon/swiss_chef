@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>SwissChef</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,300italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -10,18 +12,72 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<nav>
-	    <ul>
-	      <li>Home</li>
-	      <li>About</li>
-	      <li>Contact</li>
-	    </ul>
-  </nav>
+	<header>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="/">
+							<%= image_tag("swiss-chef-logo.png") %>
+						</a>
+						
+					</div>
+					<ul class="nav navbar-nav pull-right">
+						<li><a href="/static_pages/about.html">About Us</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+					            <li><a href="#">Wedding Cakes</a></li>
+					            <li><a href="#">Specialty Cakes</a></li>
+					            <li><a href="#">Sweet Treats</a></li>
+					         </ul>
+						</li>
+						<li><a href="/static_pages/shop.html">Shop</a></li>
+						<li><a href="/static_pages/contact.html">Contact</a></li>
+					</ul>
+
+				</div>
+				
+			</nav>
+		</header>
 
 <%= yield %>
 
 	<footer>
-	    &copy; 2015 Jose Ramos
+		<div class="container-fluid footer">
+			<div class="row">
+				<div class="links col-md-4">
+					<h3>Resources</h3>
+					<ul>
+						<li>Link 1</li>
+						<li>Link 2</li>
+						<li>Link 3</li>
+					</ul>
+				</div><!-- End of first set of links -->
+				<div class="clients col-md-4">
+					<h3>Our Clients</h3>
+					<ul>
+						<li>Link 1</li>
+						<li>Link 2</li>
+						<li>Link 3</li>
+					</ul>
+				</div><!-- End of second set of links -->
+				<div class="newsletter col-md-4">
+					<h3>Sign-up for News!</h3>
+					<form class="form-horizontal">
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+					    <div class="col-sm-10">
+					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					    </div>
+					  </div><!-- Form group ends -->
+					</div><!-- Form ends -->
+				</div><!-- End of Newsletter -->
+			</div><!-- End of row -->
+		</div><!-- End of container -->
+	    <div class="credit">
+	    	<p>&copy;2015 Jose Ramos, The Aprentice</p>
+	    </div>	
+
 	</footer>
 </body>
 </html>

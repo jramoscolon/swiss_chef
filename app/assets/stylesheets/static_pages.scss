@@ -1,3 +1,175 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+body {
+	background-color: #f5f6f1;
+}
+
+h1, h2, h3 {
+	font-family: 'Raleway';
+	
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: light;
+  font-weight: 300;
+}
+
+.navbar-default {
+	background-color: none;
+	margin-bottom: 0px;
+}
+
+/*This section is for the thumbnails*/
+.thumb-icons {
+	width: 170px;
+}
+
+.thumbnail {
+	background-color: transparent;
+	border: none;
+}
+
+.ribbon-yellow-top {
+	background-image: url('top-yellow.png');
+}
+
+.ribbon-orange-top {
+	background-image: url('top-orange.png');
+}
+
+.ribbon-teal-top{
+	background-image: url('top-teal.png');
+}
+
+.ribbon-yellow-btm {
+	background-image: url('bottom-yellow.png');
+}
+
+.ribbon-orange-btm {
+	background-image: url('bottom-orange.png');
+}
+
+.ribbon-teal-btm{
+	background-image: url('bottom-teal.png');
+}
+
+.top-ribbon {
+	/*clear: both;*/
+	background-position: center bottom;
+    background-size: 100% 60px;
+    height: 60px;
+    width: 100%;
+}
+
+.bottom-ribbon {
+	/*clear: both;*/
+	background-position: center top;
+    background-size: 100% 67px;
+    height: 67px;
+    width: 100%;
+}
+
+.caption {
+	height: 275px;
+}
+
+.caption h2 {
+	font-size: 2.5em;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.caption p {
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+.btn-center {
+	text-align: center;
+}
+
+.caption-teal {
+	background-color: #3dc0b1;
+}
+
+.caption-orange {
+	background-color: #ff764d;
+}
+
+.caption-yellow {
+	background-color: #ffbd1a;
+}
+
+
+/*Now for the banner midway down*/
+
+.jumbotron {
+	height: 700px;
+}
+
+.jumbo_top {
+	background-image: url(danish_top-1800.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 0px;
+}
+
+/* .jumbo-content {
+    background-image: url("../img/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+} */
+
+.jumbo_bottom {
+	background-image: url(cookies_peach.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	margin-top: -50px;
+	margin-bottom: 0px;
+}
+
+footer {
+	margin-top: 0;
+	background-color: #eeefe8;
+}
+
+.footer {
+	padding: 0px 40px 20px;
+	padding-bottom: 20px;
+}
+
+.credit {
+	background-color: #cac5b5;
+	padding: 7px;
+	margin-bottom: 0px;
+}
+
+.credit > p {
+	color: #f2f1ed;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/*Clearfix hack. Add the class when needed*/
+/*nav ul::after {
+	content: '';
+    display: block;
+    clear: both;
+    
+}*/
+
+
+
