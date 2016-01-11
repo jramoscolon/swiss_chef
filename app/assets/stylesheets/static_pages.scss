@@ -3,8 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-
 body {
 	background-color: #f5f6f1;
 }
@@ -171,5 +169,42 @@ footer {
     
 }*/
 
+/* Media Queries here */
 
+@media screen and (max-width: 988px) {
+    .hide-ribbon {
+        display: none;
+    }
+
+    .jumbotron-small {
+    	height: 400px;
+    }
+
+    .jumbo_top {
+		background-size: cover;
+	}
+
+	.jumbo_bottom {
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    .hide-ribbon {
+        display: none;
+    }
+
+    .jumbotron-small {
+    	height: 200px;
+    }
+
+    .jumbo_top {
+		background-size: contain;
+	}
+
+	.small-logo {
+		width: 100px;
+		height: 100px;
+	}
+}
 
