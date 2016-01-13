@@ -23,10 +23,25 @@ p {
 	margin-bottom: 0px;
 }
 
+.navbar-default .navbar-brand {
+	background: #f3e2c7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */
+	;
+
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
  .navbar-header a {
-	font-family: "mahalia",cursive;
+	font-family: "corner-store",cursive;
+	font-style: normal;
+	font-weight: 400;
 	font-size: 2em;
 }
+
 
 /*This section is for the thumbnails*/
 .thumb-icons {
