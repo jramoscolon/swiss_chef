@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Featured Products</h1>
+  <div class="row">
+    <% @featured_product.each do |product| %>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <div>
+          <%= image_tag(product.image_url, :class => 'listing-img') %>
+        </div>
+        <div class="caption">
+          <h3><%= product.name %></h3>
+          <p><%= product.description %></p>
+          <hr>
+        </div><!-- End of caption class -->
+      </div><!-- End of thumbnail -->
+    </div><!-- End of column -->
+    <% end %>
+
+  </div><!-- End of row -->
+
+</div><!-- End of first container -->
