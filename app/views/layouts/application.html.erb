@@ -35,6 +35,15 @@
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<%= form_tag("/products", method: "get") do %>
+						<div class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								<%= label_tag(:q, "Search for:") %>
+								<%= text_field_tag :q, "", class: "form-control" %>
+								<%= submit_tag("Search", class: "form-control") %>
+							</div>
+						</div>
+					<% end %>
 					<ul class="nav navbar-nav pull-right">
 						<li><a href="/static_pages/about.html">About Us</a></li>
 						<li class="dropdown">
@@ -48,6 +57,7 @@
 						<li><a href="/products/">Shop</a></li>
 						<li><a href="/static_pages/contact.html">Contact</a></li>
 					</ul>
+					
 				</div><!-- /.navbar-collapse -->
 			</div>
 			
